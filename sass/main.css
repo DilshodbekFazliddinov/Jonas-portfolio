@@ -146,13 +146,13 @@ h3 {
 .navbar .header__list a:hover::after {
   width: 100%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 445px) {
   .navbar .header__list {
     flex-direction: column;
     width: 100%;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 445px) {
   .navbar {
     width: 100%;
     margin-right: auto;
@@ -416,7 +416,7 @@ button {
   display: none;
   margin-left: auto;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 445px) {
   .toogle_btn {
     display: block;
   }
@@ -435,7 +435,7 @@ button {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 445px) {
   .hidden {
     display: none;
   }

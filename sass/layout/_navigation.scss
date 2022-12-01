@@ -29,12 +29,12 @@
       }
     }
 
-    @include responsive(phone) {
+    @include responsive(m-phone) {
       flex-direction: column;
       width: 100%;
     }
   }
-  @include responsive(phone) {
+  @include responsive(m-phone) {
     width: 100%;
     margin-right: auto;
   }

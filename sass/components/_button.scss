@@ -7,7 +7,7 @@ button {
   outline: none;
   display: none;
   margin-left: auto;
-  @include responsive(phone) {
+  @include responsive(m-phone) {
     display: block;
   }
 }
