@@ -1,0 +1,15 @@
+.hidden {
+  @include responsive(phone) {
+    display: none;
+  }
+}
+.post_hidden {
+  @include responsive(m-phone) {
+    display: none;
+  }
+}
+.work_hidden {
+  @include responsive(m-phone) {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.navbar {
+  .header__list {
+    @include flex;
+    justify-content: center;
+    gap: 3.3rem;
+    width: 240px;
+    margin-left: auto;
+    a {
+      font-weight: 500;
+      font-size: 2rem;
+      color: #000;
+      position: relative;
+      &:hover {
+        color: $color-primary;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $color-primary;
+        transition: width 0.4s linear;
+      }
+      &:hover::after {
+        width: 100%;
+        // background-color: $color-secondary;
+      }
+    }
+
+    @include responsive(phone) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  @include responsive(phone) {
+    width: 100%;
+    margin-right: auto;
+  }
+}

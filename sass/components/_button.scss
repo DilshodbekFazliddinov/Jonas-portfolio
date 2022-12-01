@@ -1,0 +1,22 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+.toogle_btn {
+  background-color: transparent;
+  outline: none;
+  display: none;
+  margin-left: auto;
+  @include responsive(phone) {
+    display: block;
+  }
+}
+.toogle__post {
+  color: #00a8cc;
+}
+.toogle__work {
+  display: none;
+  @include responsive(m-phone) {
+    display: block;
+  }
+}
