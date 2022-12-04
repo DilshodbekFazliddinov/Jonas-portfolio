@@ -4,5 +4,12 @@
     max-width: 1000px;
     padding-top: 2.7rem;
     padding-bottom: 2.7rem;
+    .home_button {
+      @include flex;
+    }
+    @include responsive(m-phone) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

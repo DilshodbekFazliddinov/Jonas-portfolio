@@ -4,27 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./sass/main.css" />
+    <title>Works</title>
+    <link rel="stylesheet" href="../sass/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="home_button">
-          <a class="home_img" href="">
-            <img src="./images/house-solid.svg" alt="" width="30" height="30" />
+          <a class="home_img" href="../index.html">
+            <img
+              src="../images/house-solid.svg"
+              alt=""
+              width="30"
+              height="30"
+            />
           </a>
           <button class="toogle_btn">
-            <img src="./images/bars-solid.svg" alt="" width="30" height="28" />
+            <img src="../images/bars-solid.svg" alt="" width="30" height="28" />
           </button>
         </div>
         <nav class="navbar hidden">
           <ul class="header__list">
             <li>
-              <a href="./pages/works.html">Works</a>
+              <a class="active" href="./works.html">Works</a>
             </li>
             <li>
-              <a href="./pages/blog.html">Blog</a>
+              <a href="./blog.html">Blog</a>
             </li>
             <li>
               <a href="">Contact</a>
@@ -34,73 +39,16 @@
       </div>
     </header>
     <!-- header end -->
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero__wrapper">
-            <h1>Hi, I am John, Creative Technologist</h1>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <a href="" class="hero__btn">Download Resume</a>
-          </div>
-          <img
-            class="hero__img"
-            src="./images/hero.png"
-            width="243"
-            height="243"
-            alt=""
-            srcset="./images/hero.png 1x, ./images/hero@2x.png 2x"
-          />
-        </div>
-      </section>
-      <!-- hero end -->
 
-      <section class="post">
+    <main>
+      <section class="work site-works">
         <div class="container">
-          <nav class="post__navbar">
-            <p>Recent posts</p>
-            <button class="toogle__post">View all</button>
-          </nav>
-          <div class="post__cards post_hidden">
-            <div class="post__cards-box">
-              <h3>Making a design system from scratch</h3>
-              <div class="post__made">
-                <p>12 Feb 2020</p>
-                <span></span>
-                <p>Design, Pattern</p>
-              </div>
-              <p class="box-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-            <div class="post__cards-box">
-              <h3>Creating pixel perfect icons in Figma</h3>
-              <div class="post__made">
-                <p>12 Feb 2020</p>
-                <span></span>
-                <p>Figma, Icon Design</p>
-              </div>
-              <p class="box-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- post end -->
-      <section class="work">
-        <div class="container">
-          <p class="feature">Featured works</p>
+          <h1>Work</h1>
           <div class="work__cards">
             <div class="work__cards-box">
-              <img class="work__img" src="./images/workimg.png" alt="" />
+              <a href="./work-detail.html">
+                <img class="work__img" src="../images/workimg.png" alt="" />
+              </a>
               <div class="work__wrapper">
                 <h2>Designing Dashboards</h2>
                 <div class="work__made">
@@ -114,8 +62,8 @@
                 </p>
               </div>
             </div>
-            <div class="work__cards-box card-hidden work_hidden">
-              <img class="work__img" src="./images/vibrant.png" alt="" />
+            <div class="work__cards-box card-hidden">
+              <img class="work__img" src="../images/vibrant.png" alt="" />
               <div class="work__wrapper">
                 <h2>Vibrant Portraits of 2020</h2>
                 <div class="work__made">
@@ -129,8 +77,23 @@
                 </p>
               </div>
             </div>
-            <div class="work__cards-box card-hidden work_hidden">
-              <img class="work__img" src="./images/type.png" alt="" />
+            <div class="work__cards-box card-hidden">
+              <img class="work__img" src="../images/type.png" alt="" />
+              <div class="work__wrapper">
+                <h2>36 Days of Malayalam type</h2>
+                <div class="work__made">
+                  <span>2018</span>
+                  <p>Typography</p>
+                </div>
+                <p class="work_text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="work__cards-box card-hidden">
+              <img class="work__img" src="../images/components.png" alt="" />
               <div class="work__wrapper">
                 <h2>36 Days of Malayalam type</h2>
                 <div class="work__made">
@@ -145,10 +108,8 @@
               </div>
             </div>
           </div>
-          <button class="toogle__work">View all</button>
         </div>
       </section>
-      <!-- work end -->
     </main>
     <!-- main end -->
     <footer>
@@ -223,6 +184,6 @@
       </div>
     </footer>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

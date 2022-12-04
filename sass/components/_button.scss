@@ -7,6 +7,9 @@ button {
   outline: none;
   display: none;
   margin-left: auto;
+  img {
+    background-color: transparent;
+  }
   @include responsive(m-phone) {
     display: block;
   }

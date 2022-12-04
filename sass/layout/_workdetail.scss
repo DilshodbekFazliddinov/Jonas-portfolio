@@ -1,0 +1,57 @@
+.work__details {
+  h1 {
+    font-size: 3.4rem;
+    width: 50.6rem;
+    margin-bottom: 3rem;
+    @include responsive(work) {
+      width: 100%;
+    }
+  }
+  .work__made {
+    span {
+      background-color: $color-primary;
+    }
+    p {
+      color: $color-dark;
+    }
+    @include responsive(work) {
+      align-items: flex-start;
+    }
+  }
+  .work_text {
+    width: 67.1rem;
+    margin-bottom: 4.6rem;
+    @include responsive(work) {
+      width: 100%;
+    }
+  }
+  .dashboard-img {
+    width: 68.1rem;
+    height: 46rem;
+    margin-bottom: 5.4rem;
+    @include responsive(tablet) {
+      width: 50rem;
+      height: 38rem;
+      margin-bottom: 3.5rem;
+    }
+    @include responsive(work) {
+      width: 40rem;
+      height: 30rem;
+      margin-bottom: 3rem;
+    }
+    @include responsive(m-phone) {
+      width: 35.5rem;
+      height: 28rem;
+      margin-bottom: 2.6rem;
+    }
+    @include responsive(work) {
+      width: 33.9rem;
+      height: 25.6rem;
+      margin-bottom: 2.3rem;
+    }
+  }
+  h3 {
+    font-size: 2.4rem;
+    line-height: 3;
+  }
+}
