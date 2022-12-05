@@ -116,6 +116,11 @@ h3 {
   }
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @media screen and (max-width: 445px) {
   .navbar {
     background-color: #000;
@@ -367,10 +372,18 @@ h3 {
   width: 246px;
   height: 180px;
 }
+@media screen and (max-width: 670px) {
+  .work__img {
+    width: 350px;
+    height: 220px;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 375px) {
   .work__img {
     width: 33.9rem;
     height: 23rem;
+    margin: 0 auto;
   }
 }
 .work__wrapper h2 {
@@ -447,6 +460,13 @@ h3 {
 .site-works h1 {
   margin-bottom: 2.5rem;
 }
+@media screen and (max-width: 670px) {
+  .site-works .img_link {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 .work__details h1 {
   font-size: 3.4rem;
@@ -485,7 +505,9 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .work__details .dashboard-img {
+    margin: 0 auto;
     width: 50rem;
+    display: flex;
     height: 38rem;
     margin-bottom: 3.5rem;
   }
@@ -493,6 +515,9 @@ h3 {
 @media screen and (max-width: 670px) {
   .work__details .dashboard-img {
     width: 40rem;
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
     height: 30rem;
     margin-bottom: 3rem;
   }
@@ -501,6 +526,9 @@ h3 {
   .work__details .dashboard-img {
     width: 35.5rem;
     height: 28rem;
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
     margin-bottom: 2.6rem;
   }
 }
@@ -508,6 +536,9 @@ h3 {
   .work__details .dashboard-img {
     width: 33.9rem;
     height: 25.6rem;
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
     margin-bottom: 2.3rem;
   }
 }
@@ -573,6 +604,24 @@ button {
 }
 @media screen and (max-width: 445px) {
   .toogle__work {
+    display: block;
+  }
+}
+
+.home_img {
+  display: none;
+}
+@media screen and (max-width: 445px) {
+  .home_img {
+    display: block;
+  }
+}
+
+.nav_img {
+  display: block;
+}
+@media screen and (max-width: 445px) {
+  .nav_img {
     display: block;
   }
 }

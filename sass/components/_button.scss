@@ -23,3 +23,15 @@ button {
     display: block;
   }
 }
+.home_img {
+  display: none;
+  @include responsive(m-phone) {
+    display: block;
+  }
+}
+.nav_img {
+  display: block;
+  @include responsive(m-phone) {
+    display: block;
+  }
+}
